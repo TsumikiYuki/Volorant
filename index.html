@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agente Yuna - Tela de Seleção</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
+      body {
+        font-family: 'Teko', sans-serif;
+      }
+      @keyframes slideInAndFade {
+        from {
+          opacity: 0;
+          transform: translateX(-15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .animate-ability-details {
+        animation: slideInAndFade 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+      
+      @keyframes agent-card-enter {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+      }
+      .animate-card-enter {
+        animation: agent-card-enter 0.5s ease-out backwards;
+      }
+
+      html {
+        font-size: 100%;
+      }
+      @media (max-width: 768px) {
+        html {
+          font-size: 90%;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "three": "https://esm.sh/three@0.165.0",
+    "three/addons/": "https://esm.sh/three@0.165.0/examples/jsm/",
+    "three/": "https://esm.sh/three@^0.179.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900 overflow-hidden">
+    <div id="root"></div>
+    
+    <!-- Audio elements for sound -->
+    <audio id="bg-music" src="https://assets.codepen.io/217233/valorant_music.mp3" loop></audio>
+    <audio id="ui-click-sound" src="https://assets.codepen.io/217233/valorant_click.mp3"></audio>
+
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
