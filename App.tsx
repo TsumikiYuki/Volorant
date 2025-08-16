@@ -1,8 +1,9 @@
+
 import React, { useState } from 'react';
-import type { Character } from './types';
-import AgentSelectScreen from './screens/AgentSelectScreen';
-import AgentDetailsScreen from './screens/AgentDetailsScreen';
-import GameScreen from './screens/GameScreen';
+import type { Character } from './types.ts';
+import AgentSelectScreen from './screens/AgentSelectScreen.tsx';
+import AgentDetailsScreen from './screens/AgentDetailsScreen.tsx';
+import GameScreen from './screens/GameScreen.tsx';
 
 type GameState = 'select' | 'details' | 'game';
 

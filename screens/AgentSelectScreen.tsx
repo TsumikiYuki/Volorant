@@ -1,7 +1,8 @@
+
 import React from 'react';
-import { AGENTS } from '../constants';
-import type { Character } from '../types';
-import AgentCard from '../components/AgentCard';
+import { AGENTS } from '../constants.tsx';
+import type { Character } from '../types.ts';
+import AgentCard from '../components/AgentCard.tsx';
 
 interface AgentSelectScreenProps {
   onAgentSelect: (character: Character) => void;

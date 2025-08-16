@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import type { Character, Ability } from '../types';
+import type { Character, Ability } from '../types.ts';
 
 interface CharacterDetailsProps {
   character: Character;

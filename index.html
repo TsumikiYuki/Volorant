@@ -59,6 +59,7 @@
   }
 }
 </script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body class="bg-gray-900 overflow-hidden">
     <div id="root"></div>
@@ -67,6 +68,6 @@
     <audio id="bg-music" src="https://assets.codepen.io/217233/valorant_music.mp3" loop></audio>
     <audio id="ui-click-sound" src="https://assets.codepen.io/217233/valorant_click.mp3"></audio>
 
-    <script type="module" src="./index.tsx"></script>
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>

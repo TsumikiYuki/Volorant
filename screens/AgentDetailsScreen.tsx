@@ -1,7 +1,8 @@
 
+
 import React, { useState, useRef, useEffect } from 'react';
-import type { Character } from '../types';
-import CharacterDetails from '../components/CharacterDetails';
+import type { Character } from '../types.ts';
+import CharacterDetails from '../components/CharacterDetails.tsx';
 
 interface AgentDetailsScreenProps {
     character: Character;

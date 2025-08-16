@@ -1,6 +1,6 @@
 
 import React from 'react';
-import type { Ability } from '../types';
+import type { Ability } from '../types.ts';
 
 interface AbilityInfoProps {
   ability: Ability;
